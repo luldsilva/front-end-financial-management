@@ -9,6 +9,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<LoginPage />} />
+        <Route path="/cadastro" element={<RegistrationPage />} />
         <Route path="/signup" element={<RegistrationPage />} />
       </Routes>
     </BrowserRouter>
