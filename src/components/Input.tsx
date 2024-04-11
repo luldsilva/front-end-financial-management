@@ -13,7 +13,6 @@ interface inputProps {
   type: string;
   isRequired: boolean;
   placeholder: string;
-  customClass: string;
 }
 const Input = ({
   handleChange,
@@ -25,7 +24,6 @@ const Input = ({
   type,
   isRequired,
   placeholder,
-  customClass,
 }: inputProps) => {
   return (
     <div className="my-5">
