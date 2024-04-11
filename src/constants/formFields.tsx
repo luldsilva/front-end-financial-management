@@ -23,44 +23,54 @@ const loginFields=[
 
 const signupFields=[
     {
-        labelText:"Username",
+        labelText:"Primeiro nome",
         labelFor:"username",
         id:"username",
         name:"username",
         type:"text",
         autoComplete:"username",
         isRequired:true,
-        placeholder:"Username"   
+        placeholder:"Primeiro nome"   
     },
     {
-        labelText:"Email address",
+        labelText:"Sobrenome",
+        labelFor:"lastname",
+        id:"lastname",
+        name:"lastname",
+        type:"text",
+        autoComplete:"lastname",
+        isRequired:true,
+        placeholder:"Sobrenome"   
+    },
+    {
+        labelText:"E-mail",
         labelFor:"email-address",
         id:"email-address",
         name:"email",
         type:"email",
         autoComplete:"email",
         isRequired:true,
-        placeholder:"Email address"   
+        placeholder:"Seu e-mail"   
     },
     {
-        labelText:"Password",
+        labelText:"Senha",
         labelFor:"password",
         id:"password",
         name:"password",
         type:"password",
         autoComplete:"current-password",
         isRequired:true,
-        placeholder:"Password"   
+        placeholder:"********"   
     },
     {
-        labelText:"Confirm Password",
+        labelText:"Confirme sua senha",
         labelFor:"confirm-password",
         id:"confirm-password",
         name:"confirm-password",
         type:"password",
         autoComplete:"confirm-password",
         isRequired:true,
-        placeholder:"Confirm Password"   
+        placeholder:"********"   
     }
 ]
 
