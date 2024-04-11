@@ -39,7 +39,7 @@ const Input = ({
         name={name}
         type={type}
         required={isRequired}
-        className={fixedInputClass}
+        className={fixedInputClass+customClass}
         placeholder={placeholder}
       />
     </div>

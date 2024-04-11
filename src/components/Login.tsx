@@ -13,6 +13,7 @@ fields.forEach(field => fieldsState[field.id]='');
 
 const Login = () =>{
     const [loginState, setLoginState] = useState(fieldsState);
+    
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setLoginState({...loginState,[e.target.id]:e.target.value})
     }
