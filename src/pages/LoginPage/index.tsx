@@ -1,7 +1,11 @@
-const Login = () => {
+import Header from "../../components/Header";
+import Login from "../../components/Login";
+
+const LoginPage = () => {
   return (
-    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+    // <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div>
+      {/* <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           className="mx-auto h-10 w-auto"
           src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -10,9 +14,17 @@ const Login = () => {
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           Sign in to your account
         </h2>
-      </div>
+      </div> */}
+      <Header
+        heading="Login to your account"
+        paragraph="Don't have an account yet?"
+        linkName="Signup"
+        linkUrl="/signup"
+      />
 
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <Login />
+
+      {/* <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form className="space-y-6" action="#" method="POST">
           <div>
             <label
@@ -81,9 +93,9 @@ const Login = () => {
             Start a 14 day free trial
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;

@@ -1,4 +1,4 @@
-const Registration = () => {
+const RegistrationPage = () => {
   return (
     <>
       <div className="flex bg-grey m-12 p-4 box-content h-[789px] w-[1017px] rounded-xl">
@@ -68,4 +68,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default RegistrationPage;
