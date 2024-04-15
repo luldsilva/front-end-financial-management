@@ -20,8 +20,8 @@ const Signup = () => {
   };
 
   return (
-    <form className="">
-      <div className="">
+    <form className="mt-8 space-y-6 mx-auto max-w-md">
+      <div className="-space-y-px">
         {fields.map((field) => (
           <Input
             key={field.id}
