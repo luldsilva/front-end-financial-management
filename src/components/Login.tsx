@@ -47,7 +47,7 @@ const Login = () =>{
     }
 
     return(
-        <form className="mt-8 space-y-6">
+        <form className="mt-8 space-y-6 mx-auto max-w-md">
         <div className="-space-y-px">
             {
                 fields.map(field=>
