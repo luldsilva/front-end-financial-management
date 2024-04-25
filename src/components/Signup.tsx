@@ -1,42 +1,23 @@
-import { ChangeEvent, useState } from "react";
-import { signupFields } from "../constants/formFields";
-import Input from "./Input";
-
-interface fieldsState {
-  id: string;
-  value: string;
-}
-
-const fields = signupFields;
-const fieldsState: {
-  [key: string]: string;
-} = {};
-fields.forEach((field) => (fieldsState[field.id] = ""));
 
 const Signup = () => {
-  const [signupState, setSignupState] = useState(fieldsState);
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSignupState({ ...signupState, [e.target.id]:e.target.value });
-  };
+  const inputStyle = "flex rounded-xl outline outline-offset-1 outline-blue w-[258px] h-[55px] p-2";
+  const inputGiant = "flex rounded-xl outline outline-offset-1 outline-blue w-[540px] h-[55px] p-2";
 
   return (
     <form className="">
-      <div className="">
-        {fields.map((field) => (
-          <Input
-            key={field.id}
-            handleChange={handleChange}
-            value={signupState[field.id]}
-            labelText={field.labelText}
-            labelFor={field.labelFor}
-            id={field.id}
-            name={field.name}
-            type={field.type}
-            isRequired={field.isRequired}
-            placeholder={field.placeholder}
-            customClass=""
-          />
-        ))}
+      <div className="flex gap-6 p-4">
+        <input type="text" placeholder="Primeiro Nome" className={inputStyle} />
+        <input type="text" placeholder="Sobrenome" className={inputStyle} />
+      </div>
+      <div className="flex gap-6 p-4">
+        <input type="email" placeholder="Seu e-mail" className={inputGiant} />
+      </div>
+      <div className="flex flex-row gap-6 p-4">
+        <input type="password" placeholder="Senha" className={inputStyle} />
+        <input type="password" placeholder="Confirme sua senha" className={inputStyle} />
+      </div>
+      <div className="flex flex-row gap-6 ml-4 text-base text-medium-grey">
+        <p>Use 8 ou mais caracteres com letras, números e símbolos.</p>
       </div>
     </form>
   );
