@@ -34,7 +34,6 @@ const Signup = () => {
             type={field.type}
             isRequired={field.isRequired}
             placeholder={field.placeholder}
-            customClass=""
           />
         ))}
       </div>
