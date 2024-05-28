@@ -21,7 +21,7 @@ const loginFields = [
   },
 ];
 
-/*const signupFields=[
+const signupFields=[
     {
         labelText:"Primeiro nome",
         labelFor:"username",
@@ -46,9 +46,6 @@ const loginFields = [
         labelText:"E-mail",
         labelFor:"email-address",
         id:"email-address",
-        labelText:"Email address",
-        labelFor:"emailaddress",
-        id:"emailaddress",
         name:"email",
         type:"email",
         autoComplete:"email",
@@ -63,7 +60,7 @@ const loginFields = [
         type:"password",
         autoComplete:"currentpassword",
         isRequired:true,
-        placeholder:"********"   
+        placeholder:"Senha"   
     },
     {
         labelText:"Confirme sua senha",
@@ -73,8 +70,8 @@ const loginFields = [
         type:"password",
         autoComplete:"confirmpassword",
         isRequired:true,
-        placeholder:"********"   
+        placeholder:"Confirme sua senha"   
     }
-]*/
+]
 
-export { loginFields };
+export { loginFields, signupFields };

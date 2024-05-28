@@ -22,14 +22,14 @@ const Header = ({
           src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
         />
       </div>
-      <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
         {heading}
       </h2>
-      <p className="mt-2 text-center text-sm text-gray-600 mt-5">
+      <p className="mt-2 font-light text-center text-sm text-gray-600">
         {paragraph}{" "}
         <Link
           to={linkUrl}
-          className="font-medium text-purple-600 hover:text-purple-500"
+          className="font-medium text-navy-blue hover:text-medium-blue"
         >
           {linkName}
         </Link>
